@@ -258,6 +258,7 @@ public class GameManager : MonoBehaviour
     */
     IEnumerator IncorrectAnswer()
     {
+        failedCurrentNumberOnce = true;
         inCoroutine = true;
         textPrompt.enabled = true;
         spawner.DestroyAllNumbers();
